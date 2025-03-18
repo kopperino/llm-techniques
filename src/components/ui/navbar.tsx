@@ -64,6 +64,14 @@ export default function Navbar() {
                             Retrieval Augmented Generation
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            href="/syntheticdatageneration"
+                            className="block py-2 px-4 hover:bg-gray-700 rounded"
+                        >
+                            Synthetic Data Generation
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>
