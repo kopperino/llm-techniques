@@ -1,103 +1,81 @@
-import Image from "next/image";
+'use client';
+import Navigation from '@/components/ui/navigation';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    return (
+        <Navigation>
+            <div className="text-white w-full">
+                <h1 className="text-center text-4xl font-bold">
+                    Large Language Models
+                </h1>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Transformer</h1>
+                    <p>
+                        A deep learning model architecture introduced in the
+                        paper Attention is All You Need. It is the foundation of
+                        most LLMs, relying on the attention mechanism to process
+                        sequences of data.
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Token</h1>
+                    <p>
+                        A token is the smallest unit of input that a model
+                        processes. It can be a word, subword, or even a
+                        character depending on how the model is tokenized. The
+                        way the model tokenizes the input depends on its
+                        tokenizer algorithm, which converts the input into
+                        tokens. Similarly, the model’s output comes as a stream
+                        of tokens, which is then decoded back into
+                        human-readable text.
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Tokenisation</h1>
+                    <p>
+                        When you provide a model with a prompt (e.g., "LangChain
+                        is cool!"), the tokenizer algorithm splits the text into
+                        tokens. For example, the sentence could be tokenized
+                        into parts like ["Lang", "Chain", " is", " cool", "!"].
+                        Note that token boundaries don’t always align with word
+                        boundaries. https://platform.openai.com/tokenizer
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Structured Output</h1>
+                    <p>
+                        Chat models can be requested to respond in a particular
+                        format (e.g., JSON or matching a particular schema).
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Multimodality</h1>
+                    <p>
+                        Large Language Models (LLMs) are not limited to
+                        processing text. They can also be used to process other
+                        types of data, such as images, audio, and video. This is
+                        known as multimodality.
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 text-center mt-10">
+                    <h1 className="text-2xl font-bold">Context Window</h1>
+                    <p>
+                        A chat model's context window refers to the maximum size
+                        of the input sequence the model can process at one time.
+                        While the context windows of modern LLMs are quite
+                        large, they still present a limitation that developers
+                        must keep in mind when working with chat models.If the
+                        input exceeds the context window, the model may not be
+                        able to process the entire input and could raise an
+                        error. In conversational applications, this is
+                        especially important because the context window
+                        determines how much information the model can "remember"
+                        throughout a conversation. Developers often need to
+                        manage the input within the context window to maintain a
+                        coherent dialogue without exceeding the limit.
+                    </p>
+                </div>
+            </div>
+        </Navigation>
+    );
 }
