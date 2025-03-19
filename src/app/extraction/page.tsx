@@ -9,7 +9,7 @@ export default function ExtractionPage() {
     return (
         <Navigation>
             <div className="text-white w-full">
-                <Requirements />
+                <Requirements title="Extraction" />
                 <Instructions
                     system_prompt="You are an expert extraction algorithm. Only extract
                         relevant information from the text. If you do not know

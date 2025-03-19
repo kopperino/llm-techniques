@@ -5,11 +5,11 @@ import Navigation from '@/components/ui/navigation';
 import Instructions from '@/components/ui/instructions';
 import LLMExecutor from '@/components/ui/llmexecutor';
 
-export default function ClassificationPage() {
+export default function SummarisationPage() {
     return (
         <Navigation>
             <div className="text-white w-full">
-                <Requirements />
+                <Requirements title="Summarisation" />
                 <Instructions
                     system_prompt="None"
                     user_prompt="Summarise the main themes in these retrieved docs: {context}"

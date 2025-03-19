@@ -9,7 +9,7 @@ export default function ClassificationPage() {
     return (
         <Navigation>
             <div className="text-white w-full">
-                <Requirements />
+                <Requirements title="Classification" />
                 <Instructions
                     system_prompt="None"
                     user_prompt="Extract the desired information from the following passage. Only extract the properties mentioned in the 'Classification' function. Passage: {docs}"

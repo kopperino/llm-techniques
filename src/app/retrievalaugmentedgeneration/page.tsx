@@ -9,7 +9,7 @@ export default function RetrievalAugmentedGenerationPage() {
     return (
         <Navigation>
             <div className="text-white w-full">
-                <Requirements />
+                <Requirements title="Retrieval Augmented Generation" />
                 <Instructions
                     system_prompt="None"
                     user_prompt="You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise. Question: {question} Context: {context} Answer:"

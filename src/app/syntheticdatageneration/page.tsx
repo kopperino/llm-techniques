@@ -5,11 +5,11 @@ import Navigation from '@/components/ui/navigation';
 import Instructions from '@/components/ui/instructions';
 import LLMExecutor from '@/components/ui/llmexecutor';
 
-export default function ClassificationPage() {
+export default function SyntheticDataGenerationPage() {
     return (
         <Navigation>
             <div className="text-white w-full">
-                <Requirements />
+                <Requirements title="Synthetic Data Generation" />
                 <Instructions
                     system_prompt="None"
                     user_prompt="Generate a conversation between a coach and athelete about the performance of the athlete."
