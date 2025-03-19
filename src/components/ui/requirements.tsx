@@ -1,7 +1,11 @@
-export default function Requirements() {
+type requirementsProps = {
+    title: string;
+};
+
+export default function Requirements({ title }: requirementsProps) {
     return (
         <div className="text-center text-4xl font-bold">
-            <h1>Requirements</h1>
+            <h1>{title}</h1>
         </div>
     );
 }
