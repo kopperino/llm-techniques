@@ -34,7 +34,6 @@ export default function Sidebar() {
 
     return (
         <div className="w-72 min-w-72 min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col p-4 shadow-lg">
-            {/* Header */}
             <Link href="/">
                 <div className="flex items-center justify-center text-center w-full h-20 bg-gray-700 text-white font-bold text-lg rounded-lg shadow-md">
                     <div className="leading-tight hover:text-amber-300 transition duration-300">
@@ -55,7 +54,7 @@ export default function Sidebar() {
                         files.map((file) => (
                             <li
                                 key={file}
-                                className="flex justify-between items-center bg-gray-700 px-4 py-3 rounded-lg shadow-md transition duration-300 hover:bg-gray-600"
+                                className="flex justify-between items-center bg-gray-700 px-4 py-3 rounded-lg transition duration-300 hover:bg-gray-600"
                             >
                                 <span className="truncate">{file}</span>
                                 <button

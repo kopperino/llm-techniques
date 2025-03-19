@@ -28,7 +28,7 @@ export default function LLMExecutor(props: ExecutorProps) {
     };
     return (
         <div className="flex flex-col justify-between h-full">
-            <div className="flex items-center justify-center text-white text-center mt-10 bg-gray-700 p-10 rounded-2xl mb-16 md:mb-20 hover:bg-gray-600">
+            <div className="flex items-center justify-center text-white text-center mt-10 shadow-md shadow-black bg-gray-700 p-10 rounded-2xl mb-16 md:mb-20 hover:bg-gray-600">
                 <p>
                     {JSON.stringify(llmOutput) ??
                         `Click the button to generate ${props.action} from the document(s).`}

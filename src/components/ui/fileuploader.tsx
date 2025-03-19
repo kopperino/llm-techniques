@@ -40,7 +40,7 @@ export default function FileUploader({ setRefreshTrigger }: FileUploaderProps) {
     };
 
     return (
-        <div className="bg-gray-500 p-6 shadow-2xl text-white min-w-full mt-0 rounded-2xl">
+        <div className="bg-gray-500 p-6 shadow-md text-white min-w-full mt-0 rounded-2xl shadow-black">
             <h2 className="text-2xl font-semibold text-center mb-4">
                 Upload File
             </h2>
@@ -50,7 +50,7 @@ export default function FileUploader({ setRefreshTrigger }: FileUploaderProps) {
                     <div className="text-base font-extrabold text-center">
                         Select a file
                     </div>
-                    <div className="bg-gray-500 rounded-2xl px-2 mt-5 text-center w-full max-w-xs">
+                    <div className="bg-gray-500 rounded-2xl px-2 mt-5 text-center w-full max-w-xs shadow-md shadow-black">
                         <p className="truncate overflow-hidden text-ellipsis">
                             {file?.name || 'No file selected...'}
                         </p>
@@ -67,7 +67,7 @@ export default function FileUploader({ setRefreshTrigger }: FileUploaderProps) {
 
                 <button
                     type="submit"
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-md transition"
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 shadow-black shadow-md rounded-md transition"
                 >
                     Submit
                 </button>
