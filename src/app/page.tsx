@@ -23,9 +23,9 @@ const topics = [
             'A token is the smallest unit of input that a model processes. It can be a word, subword, or even a character depending on how the model is tokenized. The model’s tokenizer algorithm determines how text is split into tokens, which are then processed and decoded back into human-readable text.',
     },
     {
-        title: 'Tokenization',
+        title: 'Tokenisation',
         description:
-            'When you provide a model with a prompt (e.g., "LangChain is cool!"), the tokenizer splits the text into tokens. For example, the sentence could be tokenized into parts like ["Lang", "Chain", " is", " cool", "!"]. Token boundaries don’t always align with word boundaries.',
+            'When you provide a model with a prompt (e.g., "LangChain is cool!"), the tokeniser splits the text into tokens. For example, the sentence could be tokenized into parts like ["Lang", "Chain", " is", " cool", "!"]. Token boundaries don’t always align with word boundaries.',
     },
     {
         title: 'Structured Output',
@@ -54,7 +54,7 @@ export default function Home() {
                 {topics.map((topic, index) => (
                     <Card
                         key={index}
-                        className="bg-gray-800 text-white hover:bg-gray-600 border-4 border-black shadow-lg shadow-black"
+                        className="bg-gray-800 text-white hover:bg-gray-600 border-none shadow-lg shadow-black"
                     >
                         <CardHeader>
                             <CardTitle>{topic.title}</CardTitle>
