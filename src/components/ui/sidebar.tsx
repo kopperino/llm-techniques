@@ -35,19 +35,18 @@ export default function Sidebar() {
     return (
         <div className="w-72 min-w-72 min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col p-4 shadow-lg">
             <Link href="/">
-                <div className="flex items-center justify-center text-center w-full h-20 bg-gray-700 text-white font-bold text-lg rounded-lg shadow-md">
-                    <div className="leading-tight hover:text-amber-300 transition duration-300">
+                <div className="flex items-center justify-center text-center w-full h-20 bg-gray-700 text-white font-bold text-lg rounded-lg shadow-md hover:text-amber-300 transition duration-300 tracking-wide">
+                    <div>
                         Sinan's <br />
-                        <span className="text-amber-400">Razzle Dazzle</span>
+                        <span>LLM Razzle Dazzle</span>
                     </div>
                 </div>
             </Link>
-            {/* File Uploader */}
+
             <div className="mt-4">
                 <FileUploader setRefreshTrigger={setRefreshTrigger} />
             </div>
 
-            {/* File List */}
             <div className="overflow-y-auto mt-5">
                 <ul className="space-y-3 w-full min-w-full">
                     {files.length > 0 ? (

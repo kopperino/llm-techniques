@@ -1,10 +1,6 @@
-import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
         <nav className="bg-gradient-to-r from-gray-900 to-gray-800 text-white font-bold text-lg">
             <div className="flex justify-center items-center p-6">
@@ -30,7 +26,7 @@ export default function Navbar() {
                     <li>
                         <Link
                             href="/semanticsearchengine"
-                            className="hover:underline rounded"
+                            className="hover:underline"
                         >
                             Semantic Search
                         </Link>

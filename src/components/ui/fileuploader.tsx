@@ -64,13 +64,9 @@ export default function FileUploader({ setRefreshTrigger }: FileUploaderProps) {
                         onChange={handleFileChange}
                     />
                 </label>
-
-                <button
-                    type="submit"
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 shadow-black shadow-md rounded-md transition"
-                >
-                    Submit
-                </button>
+                <div className="bg-blue-500 hover:bg-blue-600 transition-colors duration-300 text-white font-extrabold tracking-widest py-2 shadow-black shadow-md rounded-md flex flex-row justify-center">
+                    <button type="submit">SUBMIT</button>
+                </div>
             </form>
         </div>
     );
