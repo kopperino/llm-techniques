@@ -24,7 +24,7 @@ export default function ExtractionPage() {
             </div>
             <LLMExecutor
                 api_url="http://localhost:3000/api/extractor"
-                action="Extract"
+                action="extract"
             />
         </Navigation>
     );
