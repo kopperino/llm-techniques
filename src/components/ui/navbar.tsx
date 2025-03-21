@@ -25,6 +25,14 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link
+                            href="/syntheticdatageneration"
+                            className="hover:underline"
+                        >
+                            Synthetic Data Generation
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             href="/semanticsearchengine"
                             className="hover:underline"
                         >
@@ -37,14 +45,6 @@ export default function Navbar() {
                             className="hover:underline"
                         >
                             Retrieval Augmented Generation
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="/syntheticdatageneration"
-                            className="hover:underline"
-                        >
-                            Synthetic Data Generation
                         </Link>
                     </li>
                 </ul>
