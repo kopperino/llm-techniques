@@ -22,10 +22,7 @@ export default function ClassificationPage() {
                     `}
                 />
             </div>
-            <LLMExecutor
-                api_url="http://localhost:3000/api/classification"
-                action="classification"
-            />
+            <LLMExecutor api_url="api/classification" action="classification" />
         </Navigation>
     );
 }

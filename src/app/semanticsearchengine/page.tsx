@@ -17,10 +17,7 @@ export default function SemanticSearchEnginePage() {
                     schema="None"
                 />
             </div>
-            <LLMExecutor
-                api_url="http://localhost:3000/api/semanticsearchengine"
-                action="search"
-            />
+            <LLMExecutor api_url="/api/semanticsearchengine" action="search" />
         </Navigation>
     );
 }

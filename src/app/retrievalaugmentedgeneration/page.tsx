@@ -18,7 +18,7 @@ export default function RetrievalAugmentedGenerationPage() {
                 />
             </div>
             <LLMExecutor
-                api_url="http://localhost:3000/api/retrievalaugmentedgeneration"
+                api_url="/api/retrievalaugmentedgeneration"
                 action="RAG"
             />
         </Navigation>

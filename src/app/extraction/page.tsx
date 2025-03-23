@@ -22,10 +22,7 @@ export default function ExtractionPage() {
                     schema="organisational_capacity_model: The organisational capacity model used. organisational_capacity_dimensions: The organisational capacity dimensions. research_method: The research method used to undertake this study."
                 />
             </div>
-            <LLMExecutor
-                api_url="http://localhost:3000/api/extractor"
-                action="extract"
-            />
+            <LLMExecutor api_url="/api/extractor" action="extract" />
         </Navigation>
     );
 }

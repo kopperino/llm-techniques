@@ -17,10 +17,7 @@ export default function SummarisationPage() {
                     schema="None"
                 />
             </div>
-            <LLMExecutor
-                api_url="http://localhost:3000/api/summarisation"
-                action="summary"
-            />
+            <LLMExecutor api_url="/api/summarisation" action="summary" />
         </Navigation>
     );
 }

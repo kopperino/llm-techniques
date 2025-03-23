@@ -18,7 +18,7 @@ export default function SyntheticDataGenerationPage() {
                 />
             </div>
             <LLMExecutor
-                api_url="http://localhost:3000/api/syntheticdatageneration"
+                api_url="/api/syntheticdatageneration"
                 action="summary"
             />
         </Navigation>
