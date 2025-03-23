@@ -36,11 +36,13 @@ export default function LLMExecutor(props: ExecutorProps) {
             </div>
             <div className="flex justify-center">
                 <button
-                    className="rounded-2xl p-5 text-white place-items-center bg-gray-700 shadow-md shadow-black hover:bg-gray-500 cursor-pointer transform transition duration-300 hover:scale-105"
+                    className="rounded-2xl p-5 text-white font-extrabold bg-gray-700 shadow-md shadow-black hover:bg-gray-500 cursor-pointer transform transition duration-300 hover:scale-105"
                     onClick={handleClick}
                     disabled={isPending}
                 >
-                    {isPending ? 'Processing...' : `Generate ${props.action}`}
+                    {isPending
+                        ? 'Processing...'
+                        : `GENERATE ${props.action.toUpperCase()}`}
                 </button>
             </div>
         </div>
