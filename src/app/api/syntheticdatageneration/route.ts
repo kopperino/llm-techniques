@@ -9,7 +9,7 @@ const conversationModel = z.object({
 const conversationsModel = z.object({
     conversation: z
         .array(conversationModel)
-        .describe('A conversation between coach and athelete'),
+        .describe('A conversation between coach and athlete'),
 });
 
 const apiKey = process.env.OPENAI_API_KEY;
@@ -24,7 +24,7 @@ export async function GET() {
         llm.withStructuredOutput(conversationsModel);
 
     const response = await llmWithStructuredOutput.invoke(
-        'Generate a conversation between a coach and athelete about the performance of the athlete'
+        'Generate a conversation between a coach and athlete about the performance of the athlete'
     );
 
     return Response.json(response);

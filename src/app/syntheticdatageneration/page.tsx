@@ -12,9 +12,12 @@ export default function SyntheticDataGenerationPage() {
                 <Requirements title="Synthetic Data Generation" />
                 <Instructions
                     system_prompt="None"
-                    user_prompt="Generate a conversation between a coach and athelete about the performance of the athlete."
+                    user_prompt="Generate a conversation between a coach and athlete about the performance of the athlete."
                     document="None"
-                    schema="None"
+                    schema="
+                        coach_text: A coach speaking.
+                        athlete_text: An athlete speaking.
+                        conversation: A conversation between coach and athlete"
                 />
             </div>
             <LLMExecutor
